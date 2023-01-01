@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GenreCollectionViewCell" customModule="MoviewithSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="44"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoW-BI-YjA">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Z3d-nB-WbQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="14"/>
+                        <color key="textColor" name="color_white"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfO-XQ-vaY">
+                        <rect key="frame" x="0.0" y="40" width="195" height="4"/>
+                        <color key="backgroundColor" name="color_yellow"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="Lyt-2n-kVG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="zoW-BI-YjA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1YV-vU-pAi"/>
+                <constraint firstItem="WfO-XQ-vaY" firstAttribute="top" secondItem="zoW-BI-YjA" secondAttribute="bottom" id="6SR-h2-0cc"/>
+                <constraint firstItem="zoW-BI-YjA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6qG-zK-loS"/>
+                <constraint firstAttribute="trailing" secondItem="zoW-BI-YjA" secondAttribute="trailing" id="HU6-yt-VoO"/>
+                <constraint firstAttribute="bottom" secondItem="WfO-XQ-vaY" secondAttribute="bottom" id="L7A-gz-4NO"/>
+                <constraint firstItem="WfO-XQ-vaY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LoF-TO-ODw"/>
+                <constraint firstAttribute="trailing" secondItem="WfO-XQ-vaY" secondAttribute="trailing" id="gpW-7t-jxV"/>
+            </constraints>
+            <size key="customSize" width="195" height="100"/>
+            <connections>
+                <outlet property="lblGenre" destination="zoW-BI-YjA" id="BNN-cq-UnO"/>
+                <outlet property="viewOverlay" destination="WfO-XQ-vaY" id="YyH-Qc-9dW"/>
+            </connections>
+            <point key="canvasLocation" x="223.84615384615384" y="-9.24170616113744"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color_white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_yellow">
+            <color red="0.94900000095367432" green="0.74099999666213989" blue="0.067000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

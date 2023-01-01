@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (5.6.2)
+  - SDWebImage (5.13.5):
+    - SDWebImage/Core (= 5.13.5)
+  - SDWebImage/Core (5.13.5)
+  - SwiftyJSON (5.0.1)
+  - Wormholy (1.6.5)
+  - YouTubePlayer (0.7.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - SDWebImage (~> 5.0)
+  - SwiftyJSON
+  - Wormholy
+  - YouTubePlayer
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SDWebImage
+    - SwiftyJSON
+    - Wormholy
+    - YouTubePlayer
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  SDWebImage: 23d714cd599354ee7906dbae26dff89b421c4370
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
+  YouTubePlayer: 2b5f2830d8f9b2cde942083211291e382c9e6bd5
+
+PODFILE CHECKSUM: 9c581d8703d3d34e979d3ca9c7d32d85ad4f9603
+
+COCOAPODS: 1.11.3

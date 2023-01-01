@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PopularFlimCollectionViewCell" customModule="MoviewithSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="223" height="330"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="223" height="330"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dui-mI-GK8">
+                        <rect key="frame" x="0.0" y="0.0" width="223" height="291"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poster" translatesAutoresizingMaskIntoConstraints="NO" id="TbV-uO-hFA">
+                                <rect key="frame" x="0.0" y="0.0" width="223" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Ysd-5y-gIh"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87A-NX-OsF">
+                                <rect key="frame" x="0.0" y="258" width="223" height="25"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-gp-y8P" userLabel="ratingLbl">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="25"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="14"/>
+                                        <color key="textColor" name="color_white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="diR-ma-j83" customClass="RatingControl" customModule="MoviewithSwift" customModuleProvider="target">
+                                        <rect key="frame" x="138" y="4.6666666666666856" width="80" height="16"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="starSize">
+                                                <size key="value" width="16" height="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starCount">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="diR-ma-j83" secondAttribute="trailing" constant="5" id="70D-EO-bJa"/>
+                                    <constraint firstItem="diR-ma-j83" firstAttribute="centerY" secondItem="87A-NX-OsF" secondAttribute="centerY" id="75m-bx-aXw"/>
+                                    <constraint firstAttribute="bottom" secondItem="hKC-gp-y8P" secondAttribute="bottom" id="HbU-47-5yP"/>
+                                    <constraint firstItem="hKC-gp-y8P" firstAttribute="leading" secondItem="87A-NX-OsF" secondAttribute="leading" id="cS1-1Y-Hna"/>
+                                    <constraint firstAttribute="height" constant="25" id="mIK-e9-bsA"/>
+                                    <constraint firstItem="diR-ma-j83" firstAttribute="leading" secondItem="hKC-gp-y8P" secondAttribute="trailing" constant="5" id="sHd-WD-UMR"/>
+                                    <constraint firstItem="hKC-gp-y8P" firstAttribute="top" secondItem="87A-NX-OsF" secondAttribute="top" id="z52-hS-M6d"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Westworld" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evq-y0-sr4" userLabel="titleLbl">
+                                <rect key="frame" x="0.0" y="225" width="223" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="fRX-6Y-S8o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="14"/>
+                                <color key="textColor" name="color_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="evq-y0-sr4" secondAttribute="trailing" id="0BR-OA-f4p"/>
+                            <constraint firstItem="87A-NX-OsF" firstAttribute="leading" secondItem="TbV-uO-hFA" secondAttribute="leading" id="0w1-Fp-MjX"/>
+                            <constraint firstAttribute="trailing" secondItem="87A-NX-OsF" secondAttribute="trailing" id="1dL-0L-Wmy"/>
+                            <constraint firstItem="87A-NX-OsF" firstAttribute="trailing" secondItem="evq-y0-sr4" secondAttribute="trailing" id="1kf-PD-2rJ"/>
+                            <constraint firstItem="87A-NX-OsF" firstAttribute="leading" secondItem="Dui-mI-GK8" secondAttribute="leading" id="2X1-4G-G5G"/>
+                            <constraint firstItem="evq-y0-sr4" firstAttribute="leading" secondItem="Dui-mI-GK8" secondAttribute="leading" id="7Bi-1a-mqJ"/>
+                            <constraint firstItem="evq-y0-sr4" firstAttribute="top" secondItem="TbV-uO-hFA" secondAttribute="bottom" constant="5" id="7rP-nH-yoN"/>
+                            <constraint firstItem="TbV-uO-hFA" firstAttribute="top" secondItem="Dui-mI-GK8" secondAttribute="top" id="CSh-7n-2RQ"/>
+                            <constraint firstAttribute="trailing" secondItem="TbV-uO-hFA" secondAttribute="trailing" id="LZC-Jy-Ydj"/>
+                            <constraint firstItem="87A-NX-OsF" firstAttribute="leading" secondItem="Dui-mI-GK8" secondAttribute="leading" id="Lfo-Sn-3vk"/>
+                            <constraint firstItem="TbV-uO-hFA" firstAttribute="leading" secondItem="Dui-mI-GK8" secondAttribute="leading" id="RBu-wb-1Xc"/>
+                            <constraint firstItem="87A-NX-OsF" firstAttribute="bottom" secondItem="Dui-mI-GK8" secondAttribute="bottomMargin" id="U0b-jY-003"/>
+                            <constraint firstItem="87A-NX-OsF" firstAttribute="leading" secondItem="evq-y0-sr4" secondAttribute="leading" id="bmn-D3-9ia"/>
+                            <constraint firstItem="87A-NX-OsF" firstAttribute="top" secondItem="evq-y0-sr4" secondAttribute="bottom" constant="8" symbolic="YES" id="uAz-R5-d6l"/>
+                            <constraint firstItem="87A-NX-OsF" firstAttribute="top" secondItem="evq-y0-sr4" secondAttribute="bottom" constant="8" id="vrc-n9-qpJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Dui-mI-GK8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HiX-SB-W1O"/>
+                <constraint firstItem="Dui-mI-GK8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VwG-ZC-3Ly"/>
+                <constraint firstAttribute="trailing" secondItem="Dui-mI-GK8" secondAttribute="trailing" id="naI-rb-6ym"/>
+            </constraints>
+            <size key="customSize" width="223" height="367"/>
+            <point key="canvasLocation" x="230" y="5.6872037914691944"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="poster" width="500" height="750"/>
+        <namedColor name="color_white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
